@@ -1,0 +1,40 @@
+.wallet-choice-box {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #fff;
+  border: 2px solid #333;
+  border-radius: 8px;
+  padding: 1rem 1.5rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+  z-index: 1000;
+  text-align: center;
+}
+
+.wallet-choice-text {
+  font-size: 1rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+.wallet-choice-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.wallet-choice-btn {
+  padding: 0.5rem 1.2rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  background-color: #f0f0f0;
+  transition: background-color 0.2s ease;
+}
+
+.wallet-choice-btn:hover {
+  background-color: #ddd;
+}

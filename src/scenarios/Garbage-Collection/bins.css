@@ -1,0 +1,65 @@
+.bin {
+  position: absolute;
+  bottom: 50px;
+  width: 100px;
+}
+
+.dry-bin {
+  left: 5%;
+  bottom: 50px;
+  width: 350px;
+}
+
+.wet-bin {
+  left: 17%;
+  bottom: 170px;
+  width: 300px;
+}
+
+.station {
+  background-image: url("../../assets/Garbage-Collection/station.jpg");
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
+
+/* Pulse animation */
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.bin.pulse {
+  animation: pulse 0.5s ease;
+}
+
+/* Shake animation */
+@keyframes shake {
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-10px);
+  }
+  50% {
+    transform: translateX(10px);
+  }
+  75% {
+    transform: translateX(-10px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.bin.shake {
+  animation: shake 0.5s ease;
+}

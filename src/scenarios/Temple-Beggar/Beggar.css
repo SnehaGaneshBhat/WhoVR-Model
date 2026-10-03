@@ -1,0 +1,105 @@
+.beggar-container {
+  text-align: center;
+  transform: translate(0px, 900px);
+}
+
+.beggar {
+  width: 350px;
+  transition: all 0.6s ease;
+  z-index: 5;
+}
+
+/* Crying state */
+.beggar.crying {
+  filter: brightness(0.8);
+  animation: breathe 3s ease-in-out infinite;
+}
+
+/* Smiling state */
+.beggar.smiling {
+  filter: brightness(1.2);
+  transform: scale(1.1);
+  animation:
+    bounce 0.6s ease,
+    glow 1.5s ease-in-out infinite;
+}
+
+.beggar.pump {
+  animation: pump 1s ease;
+}
+
+/* Keyframes */
+@keyframes bounce {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1.1);
+  }
+}
+
+@keyframes glow {
+  0% {
+    filter: brightness(1.2);
+  }
+  50% {
+    filter: brightness(1.4);
+  }
+  100% {
+    filter: brightness(1.2);
+  }
+}
+
+@keyframes breathe {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes pump {
+  0% {
+    transform: scale(1);
+  }
+  25% {
+    transform: scale(1.2);
+  }
+  50% {
+    transform: scale(2);
+  }
+  75% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.beggar.nearby {
+  animation: pulseGlow 1.5s infinite;
+  box-shadow: 0 0 5px 6px rgba(255, 255, 255, 1);
+  border-radius: 50%; /* optional, if you want circular glow */
+}
+
+@keyframes pulseGlow {
+  0% {
+    transform: scale(1);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 1);
+  }
+  50% {
+    transform: scale(1.05);
+    box-shadow: 0 0 25px rgba(255, 255, 255, 1);
+  }
+  100% {
+    transform: scale(1);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 1);
+  }
+}

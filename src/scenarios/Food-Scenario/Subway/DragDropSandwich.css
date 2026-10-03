@@ -1,0 +1,64 @@
+.dragdrop-container {
+  display: flex;
+  gap: 2rem;
+  margin-top: 2rem;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+/* Palette of veggies to drag from */
+.veggie-palette {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  max-width: 400px;
+  padding: 1rem;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  background: #fafafa;
+}
+
+.palette-veggie {
+  width: 80px;
+  height: auto;
+  cursor: grab;
+  transition: transform 0.2s ease;
+}
+
+.palette-veggie:active {
+  cursor: grabbing;
+  transform: scale(1.05);
+}
+
+/* Sandwich drop zone */
+.sandwich-area {
+  flex: 1;
+  min-height: 300px;
+  border: 2px dashed #aaa;
+  border-radius: 8px;
+  padding: 1rem;
+  background: #fffef5;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.sandwich-area h3 {
+  width: 100%;
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+  color: #444;
+}
+
+/* Dropped veggies inside sandwich */
+.sandwich-veggie {
+  width: 60px;
+  height: auto;
+  transition: transform 0.2s ease;
+}
+
+.sandwich-veggie:hover {
+  transform: scale(1.1);
+}

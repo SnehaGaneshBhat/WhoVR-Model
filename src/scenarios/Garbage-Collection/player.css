@@ -1,0 +1,23 @@
+.player {
+  position: absolute;
+  width: 490px;
+  height: 300px;
+  transition:
+    left 0.2s linear,
+    top 0.2s linear;
+  z-index: 100;
+  pointer-events: none;
+}
+
+.player.walking {
+  animation: bob 0.4s infinite alternate;
+}
+
+@keyframes bob {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-4px);
+  }
+}

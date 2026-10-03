@@ -1,0 +1,30 @@
+.historyBox {
+  transform: translateY(100%);
+  opacity: 0;
+  transition: all 0.6s ease;
+}
+
+.historyBox.visible {
+  transform: translate(-180px, -450px);
+  opacity: 1;
+}
+
+/* Optional: add a subtle pop when it appears */
+.historyBox.visible {
+  animation: popIn 0.4s ease;
+}
+
+@keyframes popIn {
+  0% {
+    transform: scale(0.9);
+    opacity: 0;
+  }
+  50% {
+    transform: scale(1.05);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}

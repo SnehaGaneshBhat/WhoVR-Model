@@ -1,0 +1,54 @@
+.trash-piece {
+  position: absolute;
+  width: 60px;
+  cursor: pointer;
+}
+
+/* Individual positioning */
+.banana {
+  top: 640px;
+  left: 1000px;
+  width: 150px;
+}
+
+.apple {
+  top: 550px;
+  left: 590px;
+  width: 100px;
+}
+
+.wrapper {
+  top: 900px;
+  left: 400px;
+  width: 280px;
+}
+
+.paper {
+  top: 900px;
+  left: 50px;
+  width: 200px;
+}
+
+.leaves {
+  top: 900px;
+  left: 800px;
+  width: 200px;
+}
+
+.bottles {
+  top: 750px;
+  left: 750px;
+  width: 130px;
+}
+
+.pizza {
+  top: 800px;
+  left: 1500px;
+  width: 150px;
+}
+
+.coconut {
+  top: 950px;
+  left: 1400px;
+  width: 150px;
+}

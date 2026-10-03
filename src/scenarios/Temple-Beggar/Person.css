@@ -1,0 +1,11 @@
+.person {
+  position: absolute;
+  bottom: -15px; /* adjust to ground level */
+  transition: left 0.2s ease; /* smooth movement */
+  z-index: 10;
+}
+
+.person-img {
+  width: 450px; /* adjust size */
+  height: auto;
+}

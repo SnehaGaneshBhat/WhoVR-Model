@@ -1,0 +1,169 @@
+.food-app {
+  width: 100%;
+  height: 100vh;
+  background-image: url("../../../assets/Food-Scenario/indian_main_bg.jpg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.food-app .food-grid {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.food-app .food-item {
+  position: absolute;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+  z-index: 10;
+}
+
+.food-app .food-item:hover {
+  transform: scale(1.1);
+}
+
+.food-app .food-item img {
+  width: 100%;
+  height: auto;
+  display: block;
+  cursor: pointer;
+  pointer-events: auto;
+}
+
+/* Palette positions + widths (keep your values) */
+.food-app .turmeric {
+  top: 920px;
+  left: 125px;
+  width: 200px;
+}
+.food-app .ghee {
+  top: 930px;
+  left: 450px;
+  width: 200px;
+}
+.food-app .rasam {
+  top: 930px;
+  left: 1500px;
+  width: 190px;
+}
+.food-app .rice {
+  top: 650px;
+  left: 670px;
+  width: 270px;
+}
+.food-app .idly {
+  top: 620px;
+  left: 1270px;
+  width: 300px;
+}
+.food-app .onion {
+  top: 680px;
+  left: 1660px;
+  width: 150px;
+}
+
+.food-app .vada {
+  top: 630px;
+  left: 70px;
+  width: 250px;
+}
+.food-app .mirchi_bajji {
+  top: 630px;
+  left: 350px;
+  width: 300px;
+}
+.food-app .pickle {
+  top: 890px;
+  left: 1800px;
+  width: 250px;
+}
+.food-app .gajar_halwa {
+  top: 630px;
+  left: 1000px;
+  width: 250px;
+}
+.food-app .kesari_bath {
+  top: 630px;
+  left: 1900px;
+  width: 300px;
+}
+
+/* Banana leaf placement */
+.food-app .leaf-drop {
+  position: absolute;
+  top: 900px;
+  left: 750px;
+  width: 750px;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.leaf-img {
+  position: absolute;
+  top: -130px;
+  left: 0px;
+  width: 150px;
+}
+
+/* Dropped food items (override big widths) */
+.leaf-food {
+  width: 200px !important; /* force small size */
+  height: auto !important;
+  margin: 4px !important;
+  position: relative !important;
+  z-index: 1 !important;
+  transition: transform 0.2s ease;
+}
+
+.leaf-food:hover {
+  transform: scale(1.1);
+}
+
+/* Final feast */
+.food-app .feast-final {
+  position: absolute;
+  top: 850px;
+  left: 850px;
+  width: 500px;
+  z-index: 20;
+}
+
+.feast-img {
+  width: 100px;
+  height: auto;
+  display: block;
+}
+
+/* Scoreboard overlay */
+.food-app .score-panel {
+  position: fixed;
+  top: 200px;
+  right: 1000px;
+  background: rgba(255, 255, 255, 0.95);
+  border: 2px solid #333;
+  border-radius: 8px;
+  padding: 1rem 1.5rem;
+  z-index: 9999;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  max-width: 300px;
+}
+
+.food-app .score-panel h3 {
+  margin-top: 0;
+  font-size: 1.2rem;
+  color: #222;
+}
+
+.food-app .score-panel ul {
+  margin: 0.5rem 0;
+  padding-left: 1.2rem;
+}
+
+.food-app .score-panel li {
+  margin-bottom: 0.3rem;
+  font-size: 0.95rem;
+}

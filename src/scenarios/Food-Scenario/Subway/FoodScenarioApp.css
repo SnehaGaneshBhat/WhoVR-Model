@@ -1,0 +1,237 @@
+.food-app {
+  width: 100%;
+  height: 100vh;
+  background-image: url("../../../assets/Food-Scenario/background.jpg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.food-app .food-grid {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.food-app .food-item {
+  position: absolute;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+  z-index: 10;
+}
+
+.food-app .food-item:hover {
+  transform: scale(1.1);
+}
+
+.food-app .food-item img {
+  width: 100%;
+  height: auto;
+  display: block;
+  cursor: pointer;
+  pointer-events: auto;
+}
+
+/* Individual positions + widths */
+.food-app .potato {
+  top: 630px;
+  left: 125px;
+  width: 200px;
+}
+.food-app .tomato {
+  top: 630px;
+  left: 450px;
+  width: 150px;
+}
+.food-app .cucumber {
+  top: 570px;
+  left: 1080px;
+  width: 160px;
+}
+.food-app .lettuce {
+  top: 630px;
+  left: 760px;
+  width: 200px;
+}
+.food-app .onion {
+  top: 630px;
+  left: 1450px;
+  width: 150px;
+}
+.food-app .red_capsicum {
+  top: 630px;
+  left: 1700px;
+  width: 150px;
+}
+.food-app .yellow_capsicum {
+  top: 630px;
+  left: 2000px;
+  width: 150px;
+}
+
+.food-app .candy {
+  top: 150px;
+  left: 150px;
+  width: 250px;
+}
+.food-app .muffin {
+  top: 120px;
+  left: 500px;
+  width: 300px;
+}
+.food-app .cookies {
+  top: 150px;
+  left: 900px;
+  width: 250px;
+}
+.food-app .sprinkles {
+  top: 130px;
+  left: 1200px;
+  width: 270px;
+}
+.food-app .wafers {
+  top: 110px;
+  left: 1800px;
+  width: 300px;
+}
+
+.food-app .score-panel {
+  margin-top: 1rem;
+  padding: 1rem;
+  border-top: 2px solid #eee;
+}
+
+.food-app .bell {
+  top: 170px;
+  left: 1550px;
+  width: 250px;
+  cursor: pointer;
+  z-index: 10;
+}
+
+/* Bread placement */
+.food-app .bread-drop {
+  position: absolute;
+  top: 750px;
+  left: 950px;
+  width: 500px;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.bread-img {
+  position: absolute;
+  top: -130px; /* distance from top of parent */
+  left: 0px; /* distance from left of parent */
+  width: 150px; /* scale as needed */
+}
+
+.sandwich-veggie {
+  width: 60px;
+  position: relative;
+  margin: 4px;
+}
+
+.sandwich-item-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.multiplier-tag {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  background: red;
+  color: white;
+  font-weight: bold;
+  padding: 2px 6px;
+  border-radius: 50%;
+  font-size: 0.8rem;
+}
+
+/* Unhealthy spawned items */
+.unhealthy-spawn {
+  position: absolute;
+}
+.unhealthy-spawn img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.unhealthy-spawn.add_muffin {
+  top: 750px;
+  left: 400px;
+  width: 250px;
+}
+.unhealthy-spawn.add_cookies {
+  top: 750px;
+  left: 1500px;
+  width: 250px;
+}
+.unhealthy-spawn.add_wafers {
+  top: 730px;
+  left: 1900px;
+  width: 300px;
+}
+.unhealthy-spawn.add_candy {
+  top: 750px;
+  left: 140px;
+  width: 200px;
+}
+
+.food-app .sandwich-final {
+  position: absolute;
+  top: 40px;
+  left: -100px;
+  width: 2500px;
+  z-index: 20;
+}
+
+.sandwich-img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+/* Scoreboard overlay */
+.food-app .score-panel {
+  position: fixed; /* stays on top regardless of scroll */
+  top: 200px; /* distance from top of screen */
+  right: 1000px; /* distance from right edge */
+  background: rgba(255, 255, 255, 0.95); /* semi-opaque white box */
+  border: 2px solid #333;
+  border-radius: 8px;
+  padding: 1rem 1.5rem;
+  z-index: 9999; /* ensures it's above all other elements */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  max-width: 300px;
+}
+
+.food-app .score-panel h3 {
+  margin-top: 0;
+  font-size: 1.2rem;
+  color: #222;
+}
+
+.food-app .score-panel ul {
+  margin: 0.5rem 0;
+  padding-left: 1.2rem;
+}
+
+.food-app .score-panel li {
+  margin-bottom: 0.3rem;
+  font-size: 0.95rem;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(200px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}

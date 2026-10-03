@@ -1,0 +1,78 @@
+.dragdrop-container {
+  display: flex;
+  gap: 2rem;
+  margin-top: 2rem;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+/* Palette of foods */
+.food-palette {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  max-width: 400px;
+  padding: 1rem;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  background: #fafafa;
+}
+
+.palette-food {
+  width: 80px;
+  height: auto;
+  cursor: grab;
+  transition: transform 0.2s ease;
+}
+
+.palette-food:active {
+  cursor: grabbing;
+  transform: scale(1.05);
+}
+
+/* Banana leaf drop zone */
+.leaf-area {
+  flex: 1;
+  min-height: 400px;
+  border: 2px dashed #aaa;
+  border-radius: 8px;
+  padding: 1rem;
+  background: #fffef5;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: relative;
+}
+
+.leaf-area h3 {
+  width: 100%;
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+  color: #444;
+}
+
+.leaf-img {
+  width: 100%;
+  max-height: 300px;
+  object-fit: contain;
+  opacity: 0.3; /* faint background leaf */
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
+
+/* ✅ Dropped food items */
+.leaf-food {
+  width: 60px; /* keep your value */
+  height: auto;
+  margin: 4px; /* small spacing */
+  transition: transform 0.2s ease;
+  z-index: 1;
+}
+
+.leaf-food:hover {
+  transform: scale(1.1);
+}

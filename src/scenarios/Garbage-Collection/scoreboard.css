@@ -1,0 +1,35 @@
+.scoreboard {
+  position: absolute;
+  top: 250px;
+  left: 900px;
+  background: white;
+  padding: 10px;
+  border-radius: 8px;
+  font-weight: bold;
+}
+
+.done-button {
+  position: absolute;
+  top: 30px;
+  left: 92%;
+  transform: translateX(-50%);
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+}
+
+.new-simulation-button {
+  position: absolute;
+  top: 100px;
+  left: 102%;
+  transform: translateX(-50%);
+  background-color: #dd1717;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+}
